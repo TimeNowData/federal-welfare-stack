@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Federal-Level Welfare Stack BETA — Taxpayer-Paid Welfare Stack</title>
+<meta name="description" content="Prototype B searchable library of 55 federal welfare-stack program families that transfer taxpayer-funded value through benefits, subsidies, credits, loans, insurance, grants, and pass-throughs." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="light">
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="app-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 32 32" aria-label="TimeNowData mark" role="img">
+        <rect x="1" y="1" width="30" height="30" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M6 11 H26 M6 16 H20 M6 21 H24" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+        <circle cx="24" cy="11" r="2" fill="currentColor"/>
+      </svg>
+      <div class="brand-text">
+        <div class="brand-eyebrow">TimeNowData · Prototype B</div>
+        <div class="brand-title">Taxpayer-Paid Welfare Stack</div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <span class="beta-pill" title="Research prototype only">FEDERAL-LEVEL WELFARE STACK · BETA</span>
+      <button id="themeToggle" class="ghost-btn" aria-label="Toggle color theme" title="Toggle theme">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="wrap module-row">
+    <div class="module-heading">
+      <span class="module-mark">II</span>
+      <h1>Federal-Level Welfare Stack <span class="muted-tag">BETA</span></h1>
+    </div>
+    <p class="module-desc">A searchable library of <strong>55 federal welfare-stack program families</strong> that transfer taxpayer-funded value — through cash, in-kind benefits, subsidies, credits, loans, insurance, guarantees, direct services, grants, or state/local pass-throughs.</p>
+  </div>
+</header>
+
+<main id="main" class="wrap main">
+
+  <!-- KPI ROW -->
+  <section class="kpi-row" aria-label="Key counts">
+    <div class="kpi"><div class="kpi-num" id="kpi-total">—</div><div class="kpi-lbl">Federal program families</div></div>
+    <div class="kpi"><div class="kpi-num" id="kpi-direct">—</div><div class="kpi-lbl">Direct household value</div></div>
+    <div class="kpi"><div class="kpi-num" id="kpi-state">—</div><div class="kpi-lbl">State-administered</div></div>
+    <div class="kpi"><div class="kpi-num" id="kpi-db">—</div><div class="kpi-lbl">State database candidates</div></div>
+    <div class="kpi"><div class="kpi-num" id="kpi-mech">—</div><div class="kpi-lbl">Assistance mechanisms</div></div>
+    <div class="kpi"><div class="kpi-num" id="kpi-agencies">—</div><div class="kpi-lbl">Federal agencies</div></div>
+  </section>
+
+  <!-- DISCLAIMER STRIP -->
+  <aside class="disclaimer" role="note">
+    <strong>Research prototype only.</strong> Not legal, benefits, or financial advice. Verify all program details against the linked official source. Tax-expenditure and program-mechanism classifications are analytical tags applied by the research team, not legal categorizations.
+  </aside>
+
+  <!-- SEARCH + FILTER BAR -->
+  <section class="controls" aria-label="Search and filters">
+    <div class="search-row">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="q" type="search" placeholder="Search 55 programs — name, agency, mechanism, recipient, rationale…" autocomplete="off" />
+        <button id="clearQ" class="clear-q" aria-label="Clear search" hidden>×</button>
+      </div>
+      <div class="view-toggle" role="tablist" aria-label="View mode">
+        <button class="toggle-btn active" data-view="cards" role="tab" aria-selected="true">Cards</button>
+        <button class="toggle-btn" data-view="table" role="tab" aria-selected="false">Table</button>
+      </div>
+      <button id="filtersToggle" class="ghost-btn filters-toggle" aria-expanded="true" aria-controls="filters">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+        Filters <span id="activeCount" class="count-badge" hidden>0</span>
+      </button>
+    </div>
+    <div id="filters" class="filters" aria-label="Filter controls">
+      <details class="filter-group" open>
+        <summary>Agency<span class="filter-count" id="cnt-agency"></span></summary>
+        <div class="chips" id="filter-agency"></div>
+      </details>
+      <details class="filter-group" open>
+        <summary>Need category<span class="filter-count" id="cnt-need"></span></summary>
+        <div class="chips" id="filter-need"></div>
+      </details>
+      <details class="filter-group">
+        <summary>Recipient type<span class="filter-count" id="cnt-recipient"></span></summary>
+        <div class="chips" id="filter-recipient"></div>
+      </details>
+      <details class="filter-group" open>
+        <summary>Benefit mechanism<span class="filter-count" id="cnt-mech"></span></summary>
+        <div class="chips" id="filter-mech"></div>
+      </details>
+      <details class="filter-group">
+        <summary>Welfare-stack relationship<span class="filter-count" id="cnt-stack"></span></summary>
+        <div class="chips" id="filter-stack"></div>
+      </details>
+      <details class="filter-group" open>
+        <summary>Flags<span class="filter-count" id="cnt-flags"></span></summary>
+        <div class="chips" id="filter-flags"></div>
+      </details>
+      <details class="filter-group">
+        <summary>Priority batch<span class="filter-count" id="cnt-batch"></span></summary>
+        <div class="chips" id="filter-batch"></div>
+      </details>
+      <details class="filter-group">
+        <summary>Verification<span class="filter-count" id="cnt-verif"></span></summary>
+        <div class="chips" id="filter-verif"></div>
+      </details>
+      <div class="filter-actions">
+        <button id="resetFilters" class="link-btn">Reset all filters</button>
+      </div>
+    </div>
+    <div class="result-meta">
+      <span id="resultCount">— programs</span>
+      <span class="dot">·</span>
+      <a href="data/programs.csv" download class="link-btn">Download CSV</a>
+      <span class="dot">·</span>
+      <a href="data/programs.json" download class="link-btn">Download JSON</a>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="results" class="results" aria-live="polite"></section>
+  <table id="resultsTable" class="results-table" hidden>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Program</th>
+        <th scope="col">Agency</th>
+        <th scope="col">Mechanism</th>
+        <th scope="col">Batch</th>
+        <th scope="col">Flags</th>
+        <th scope="col">Source</th>
+      </tr>
+    </thead>
+    <tbody id="resultsTbody"></tbody>
+  </table>
+
+  <!-- PANELS -->
+  <section class="panel-grid" aria-label="Methodology panels">
+
+    <article class="panel" id="count-discipline">
+      <header class="panel-head">
+        <h2>Count discipline</h2>
+        <p>How we count, and what these numbers do <em>not</em> claim.</p>
+      </header>
+      <div class="panel-body">
+        <dl class="def-list">
+          <dt>Federal program family</dt>
+          <dd>A single federal authorization — a law, appropriation, or regulatory framework — that transfers public value to an eligible recipient class through a defined mechanism. SNAP is one program family. The 55 records here are 55 program families.</dd>
+
+          <dt>State implementation record</dt>
+          <dd>A state's specific implementation of a federal program family. <em>Nevada SNAP</em> is a state implementation record linked to the SNAP family. State implementations are <strong>not</strong> counted here — that is the next layer (see <a href="#future-merge">Future merge path</a>).</dd>
+
+          <dt>Broad federal assistance listing</dt>
+          <dd>Catalogs such as SAM.gov Assistance Listings inventory ~2,400+ federal CFDA programs, many of which are administrative, institutional, or non-household-direct. The 55-program MVP intentionally narrows to high-signal taxpayer-paid welfare-stack programs.</dd>
+        </dl>
+        <div class="callout warn">
+          <strong>Do not overclaim.</strong> This index does not catalog every federal grant. It does not claim 50× counts by multiplying through states. It does not equate "program count" with "spending" or "households served." Each count is one federal program family.
+        </div>
+      </div>
+    </article>
+
+    <article class="panel" id="future-merge">
+      <header class="panel-head">
+        <h2>Future merge path</h2>
+        <p>How Prototype B will compose with state-layer prototypes to estimate household support value.</p>
+      </header>
+      <div class="panel-body">
+        <ol class="merge-path">
+          <li>
+            <span class="step-num">1</span>
+            <div><strong>Federal Program Family</strong><br/><span class="muted">e.g. SNAP — one federal authorization, one mechanism, one source URL.</span></div>
+          </li>
+          <li class="arrow" aria-hidden="true">↓</li>
+          <li>
+            <span class="step-num">2</span>
+            <div><strong>State Implementation</strong><br/><span class="muted">e.g. Nevada SNAP — state agency, EBT issuance schedule, eligibility engine.</span></div>
+          </li>
+          <li class="arrow" aria-hidden="true">↓</li>
+          <li>
+            <span class="step-num">3</span>
+            <div><strong>State Supplement / Waiver / Admin Layer</strong><br/><span class="muted">e.g. state-funded TANF top-ups, 1115 waivers, Medicaid expansion status, state-level supplements (SSP, state EITC).</span></div>
+          </li>
+          <li class="arrow" aria-hidden="true">↓</li>
+          <li>
+            <span class="step-num">4</span>
+            <div><strong>Estimated Household Support Value</strong><br/><span class="muted">A defensible per-household estimate composed from federal + state layers. The state BETA prototype handles this estimation; Prototype B feeds it the federal floor.</span></div>
+          </li>
+        </ol>
+      </div>
+    </article>
+
+    <article class="panel panel-wide" id="expansion-batches">
+      <header class="panel-head">
+        <h2>10 expansion batches</h2>
+        <p>Roadmap for growing the index beyond the 55-program MVP. Each batch defines inclusion criteria, approximate count, and example programs.</p>
+      </header>
+      <div class="panel-body">
+        <div class="exp-grid" id="expansion-grid"></div>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="distribution" aria-label="Initial-batch distribution">
+    <header class="panel-head">
+      <h2>The 55-program MVP, by batch</h2>
+      <p>How the initial 55 federal program families distribute across the 16 MVP batches.</p>
+    </header>
+    <div id="initial-grid" class="initial-grid"></div>
+  </section>
+
+  <footer class="app-footer">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-title">Source</div>
+        <p>Each program record carries an <em>official_source_url</em> linking to the primary federal agency page. The full underlying research is exported as CSV/JSON above.</p>
+      </div>
+      <div>
+        <div class="foot-title">Defensibility</div>
+        <p>Expired programs (TAA, ACP) are intentionally excluded. LIHTC is included with <code>direct_household_value = false</code> because the credit flows to developers. TANF is GRANT-FORMULA at the federal level but reaches households via state cash assistance.</p>
+      </div>
+      <div>
+        <div class="foot-title">Disclaimer</div>
+        <p>This is a research prototype. Not legal, benefits, or financial advice. Verify everything against the linked official source before use. Counts reflect distinct authorization families, not state variants.</p>
+      </div>
+    </div>
+    <div class="foot-rule">© TimeNowData research prototype · Prototype B preview · Not for public distribution</div>
+  </footer>
+
+</main>
+
+<!-- Program detail modal -->
+<div id="modal" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card" role="document">
+    <button class="modal-close" data-close aria-label="Close detail">×</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
