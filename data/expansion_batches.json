@@ -1,0 +1,130 @@
+[
+  {
+    "code": "A",
+    "name": "Additional VA Benefits",
+    "estimate": "6\u201310 programs",
+    "focus": "VA programs providing direct financial, health, or housing value to veterans and their dependents",
+    "examples": [
+      "VA Healthcare System",
+      "Caregiver Support Program",
+      "Specially Adapted Housing (SAH) Grant",
+      "Service-Disabled Veterans Insurance (S-DVI)",
+      "Dependency and Indemnity Compensation (DIC)"
+    ]
+  },
+  {
+    "code": "B",
+    "name": "Medicare Sub-Programs & Low-Income Assistance",
+    "estimate": "4\u20136 programs",
+    "focus": "CMS programs providing premium, cost-sharing, or drug cost assistance to low-income Medicare beneficiaries",
+    "examples": [
+      "Medicare Savings Programs (QMB/SLMB/QI/QDWI)",
+      "Medicare Part D Low-Income Subsidy (Extra Help)",
+      "D-SNPs",
+      "Medicare Hospice Benefit"
+    ]
+  },
+  {
+    "code": "C",
+    "name": "HUD Homeless Assistance (Continuum of Care)",
+    "estimate": "3\u20135 programs",
+    "focus": "HUD competitive grant programs funding homeless services providers",
+    "examples": [
+      "CoC Permanent Supportive Housing",
+      "Transitional Housing",
+      "Rapid Rehousing",
+      "Safe Havens",
+      "CoC Victim Services set-aside"
+    ]
+  },
+  {
+    "code": "D",
+    "name": "Federal Higher Education Grants & Work Programs",
+    "estimate": "4\u20136 programs",
+    "focus": "Federal grants and work programs for post-secondary students beyond Pell",
+    "examples": [
+      "SEOG",
+      "Federal Work-Study",
+      "TEACH Grant",
+      "Iraq & Afghanistan Service Grant",
+      "HBCU Capital Financing",
+      "TRIO"
+    ]
+  },
+  {
+    "code": "E",
+    "name": "Behavioral Health, Substance Use & Mental Health Block Grants",
+    "estimate": "3\u20135 programs",
+    "focus": "SAMHSA block grants and targeted grants to states for mental health and SUD services",
+    "examples": [
+      "Community Mental Health Services Block Grant (MHBG)",
+      "Substance Abuse Prevention and Treatment Block Grant (SABG)",
+      "Certified Community Behavioral Health Clinics (CCBHCs)"
+    ]
+  },
+  {
+    "code": "F",
+    "name": "Maternal & Child Health and Disability Services",
+    "estimate": "4\u20136 programs",
+    "focus": "Federal formula grants and programs targeting prenatal, maternal, and child disability services",
+    "examples": [
+      "Title V MCH Block Grant",
+      "Early Intervention (IDEA Part C)",
+      "Special Education (IDEA Part B)",
+      "Healthy Start",
+      "Nurse-Family Partnership"
+    ]
+  },
+  {
+    "code": "G",
+    "name": "Economic Mobility \u2014 Savings, Assets & CDFIs",
+    "estimate": "4\u20136 programs",
+    "focus": "Federal programs promoting asset-building, savings, and community financial institution access for low-income households",
+    "examples": [
+      "CDFI Fund (BEA, NMTC, Capital Magnet Fund)",
+      "Assets for Independence (IDA)",
+      "State Small Business Credit Initiative (SSBCI)",
+      "USDA Business Development grants"
+    ]
+  },
+  {
+    "code": "H",
+    "name": "Environmental Justice, Infrastructure & Community Resilience",
+    "estimate": "4\u20136 programs",
+    "focus": "Federal programs distributing direct household or community value through IRA/BIL/IIJA funding streams targeting low-income or disadvantaged communities",
+    "examples": [
+      "EPA Environmental Justice Collaborative Problem-Solving grants",
+      "DOE Home Energy Rebates (HOMES/HEAR)",
+      "HUD Resilient Infrastructure Grants",
+      "REAP",
+      "Low-Income Weatherization under IRA"
+    ]
+  },
+  {
+    "code": "I",
+    "name": "State and Local Pass-Through Indexes",
+    "estimate": "50 state records per major program",
+    "focus": "State-specific implementation records for top Tier 1 federal programs (SNAP, Medicaid, TANF, CCDF, LIHEAP, UI)",
+    "examples": [
+      "Nevada SNAP income limits & EBT schedule",
+      "Nevada Medicaid / Nevada Check Up",
+      "TANF/Nevada Families benefit schedule",
+      "California LIHEAP vs. Nevada LIHEAP"
+    ]
+  },
+  {
+    "code": "J",
+    "name": "Federal Administrative & System-Level Programs",
+    "estimate": "5\u20138 programs",
+    "focus": "Federal programs that transfer value primarily to institutions, public administrative systems, or state governments",
+    "examples": [
+      "Title XIX Medicaid Administration Matching",
+      "MMIS funding",
+      "SSA systems grants to states",
+      "Election Security (HAVA)",
+      "Public Health Emergency Preparedness (PHEP)",
+      "Title XX SSBG transfers",
+      "Emergency Management Performance Grants (EMPG)"
+    ]
+  }
+]

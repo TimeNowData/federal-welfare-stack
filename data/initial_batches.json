@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Batch 1 \u2014 Core Income & Nutrition",
+    "programs": 8,
+    "focus": "Cash assistance, food, tax credits"
+  },
+  {
+    "name": "Batch 2 \u2014 Health Coverage",
+    "programs": 4,
+    "focus": "Health insurance, subsidies"
+  },
+  {
+    "name": "Batch 3 \u2014 Housing Assistance",
+    "programs": 8,
+    "focus": "Rental, ownership, homelessness"
+  },
+  {
+    "name": "Batch 4 \u2014 Veterans Benefits",
+    "programs": 3,
+    "focus": "Disability, income, education"
+  },
+  {
+    "name": "Batch 5 \u2014 Education & Student Aid",
+    "programs": 3,
+    "focus": "Grants, loans, K-12"
+  },
+  {
+    "name": "Batch 6 \u2014 Energy & Utilities",
+    "programs": 3,
+    "focus": "LIHEAP, weatherization, telecom"
+  },
+  {
+    "name": "Batch 7 \u2014 Nutrition (Child & Community)",
+    "programs": 6,
+    "focus": "School meals, child care, seniors, tribal"
+  },
+  {
+    "name": "Batch 8 \u2014 Workers & Employment",
+    "programs": 3,
+    "focus": "UI, workforce, apprenticeship"
+  },
+  {
+    "name": "Batch 9 \u2014 Agriculture & Rural",
+    "programs": 3,
+    "focus": "Farm, crop insurance, rural housing"
+  },
+  {
+    "name": "Batch 10 \u2014 Small Business",
+    "programs": 2,
+    "focus": "Business loans, guarantees"
+  },
+  {
+    "name": "Batch 11 \u2014 Disability, Social Services, Child Welfare",
+    "programs": 2,
+    "focus": "Foster care, block grants"
+  },
+  {
+    "name": "Batch 12 \u2014 Disaster Assistance",
+    "programs": 2,
+    "focus": "FEMA, flood insurance"
+  },
+  {
+    "name": "Batch 13 \u2014 FHA Mortgage",
+    "programs": 1,
+    "focus": "Homeownership insurance"
+  },
+  {
+    "name": "Batch 14 \u2014 Tribal & Indigenous",
+    "programs": 2,
+    "focus": "IHS, BIA"
+  },
+  {
+    "name": "Batch 15 \u2014 National Service",
+    "programs": 1,
+    "focus": "AmeriCorps"
+  },
+  {
+    "name": "Batch 16 \u2014 Supplemental & Adjacent",
+    "programs": 5,
+    "focus": "Tax credits, conservation, VA loans, HIV"
+  }
+]

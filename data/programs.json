@@ -1,0 +1,1570 @@
+[
+  {
+    "program_id": 1,
+    "program_name": "Supplemental Nutrition Assistance Program (SNAP)",
+    "federal_agency": "USDA",
+    "subagency": "Food and Nutrition Service (FNS)",
+    "need_categories": [
+      "Food security",
+      "poverty",
+      "income support"
+    ],
+    "recipient_types": [
+      "Low-income households",
+      "families",
+      "individuals",
+      "elderly",
+      "disabled"
+    ],
+    "benefit_mechanism_raw": "VOUCHER",
+    "benefit_mechanisms": [
+      "VOUCHER"
+    ],
+    "welfare_stack_relationship": "Foundational income support; categorical eligibility gateway to other programs",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 1",
+    "rationale": "Largest U.S. nutrition assistance program serving 41.7M participants/month at $99.8B federal spending; 50-state implementation makes it top state database candidate.",
+    "official_source_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+    "verification_status": "Verified \u2014 USDA FNS primary source"
+  },
+  {
+    "program_id": 2,
+    "program_name": "Temporary Assistance for Needy Families (TANF)",
+    "federal_agency": "HHS",
+    "subagency": "Administration for Children and Families (ACF)",
+    "need_categories": [
+      "Cash assistance",
+      "income support",
+      "poverty",
+      "child welfare",
+      "employment"
+    ],
+    "recipient_types": [
+      "Families with children",
+      "pregnant women",
+      "needy parents"
+    ],
+    "benefit_mechanism_raw": "GRANT-FORMULA",
+    "benefit_mechanisms": [
+      "GRANT-FORMULA"
+    ],
+    "welfare_stack_relationship": "$16.57B/year block grant to states; funds cash assistance and services; high state variation",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 1",
+    "rationale": "$16.57B/year block grant; state-by-state variation in benefit levels, eligibility rules, and spending priorities makes it a high-value state database candidate.",
+    "official_source_url": "https://www.acf.hhs.gov/ofa/programs/tanf",
+    "verification_status": "Verified \u2014 ACF/HHS primary source"
+  },
+  {
+    "program_id": 3,
+    "program_name": "Supplemental Security Income (SSI)",
+    "federal_agency": "Social Security Administration (SSA)",
+    "subagency": "N/A",
+    "need_categories": [
+      "Disability",
+      "aging",
+      "income support",
+      "poverty"
+    ],
+    "recipient_types": [
+      "Elderly (65+)",
+      "blind",
+      "disabled individuals with limited income/resources"
+    ],
+    "benefit_mechanism_raw": "CASH",
+    "benefit_mechanisms": [
+      "CASH"
+    ],
+    "welfare_stack_relationship": "Categorical eligibility trigger for Medicaid and SNAP in most states; state supplements common",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 1",
+    "rationale": "Federal cash floor benefit ($967/month individual in 2025) for ~8 million people; SSI receipt triggers automatic Medicaid eligibility in most states.",
+    "official_source_url": "https://www.ssa.gov/ssi",
+    "verification_status": "Verified \u2014 SSA primary source"
+  },
+  {
+    "program_id": 4,
+    "program_name": "Social Security Disability Insurance (SSDI / OASDI Disability)",
+    "federal_agency": "Social Security Administration (SSA)",
+    "subagency": "N/A",
+    "need_categories": [
+      "Disability",
+      "income replacement",
+      "workers"
+    ],
+    "recipient_types": [
+      "Disabled workers with qualifying work history",
+      "dependents"
+    ],
+    "benefit_mechanism_raw": "CASH",
+    "benefit_mechanisms": [
+      "CASH"
+    ],
+    "welfare_stack_relationship": "Work-history-based insurance; 24-month wait triggers Medicare eligibility",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": false,
+    "priority_batch": "Batch 1",
+    "rationale": "7.2 million disabled workers receiving $1581/month average (Dec 2024); Medicare eligibility after 24-month waiting period makes this a critical disability stack node.",
+    "official_source_url": "https://www.ssa.gov/disability",
+    "verification_status": "Verified \u2014 SSA primary source"
+  },
+  {
+    "program_id": 5,
+    "program_name": "Social Security Old-Age & Survivors Insurance (OASDI \u2014 Retirement & Survivors)",
+    "federal_agency": "Social Security Administration (SSA)",
+    "subagency": "N/A",
+    "need_categories": [
+      "Retirement",
+      "income support",
+      "survivors"
+    ],
+    "recipient_types": [
+      "Retired workers (62+)",
+      "survivors of deceased workers",
+      "dependents"
+    ],
+    "benefit_mechanism_raw": "CASH",
+    "benefit_mechanisms": [
+      "CASH"
+    ],
+    "welfare_stack_relationship": "Foundational retirement income; does not disqualify from SSI/SNAP/housing assistance",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": false,
+    "priority_batch": "Batch 1",
+    "rationale": "~60 million retirement/survivor beneficiaries receiving $1.6T/year; foundational income layer for nearly all senior households.",
+    "official_source_url": "https://www.ssa.gov/policy/docs/statcomps/supplement/2024/oasdi.html",
+    "verification_status": "Verified \u2014 SSA primary source"
+  },
+  {
+    "program_id": 6,
+    "program_name": "Earned Income Tax Credit (EITC)",
+    "federal_agency": "U.S. Department of the Treasury / IRS",
+    "subagency": "IRS (Wage and Investment Division)",
+    "need_categories": [
+      "Working poor",
+      "income support",
+      "poverty reduction",
+      "workers"
+    ],
+    "recipient_types": [
+      "Low- to moderate-income workers and families with or without children"
+    ],
+    "benefit_mechanism_raw": "TAX-CREDIT",
+    "benefit_mechanisms": [
+      "TAX-CREDIT"
+    ],
+    "welfare_stack_relationship": "Largest refundable tax credit; supplements earnings; 30+ states have own EITC add-ons",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 1",
+    "rationale": "~31 million workers claim ~$64B/year; refundable structure means low-income filers receive cash even with no tax liability; state EITC supplements create database linkage opportunity.",
+    "official_source_url": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit-eitc",
+    "verification_status": "Verified \u2014 IRS primary source"
+  },
+  {
+    "program_id": 7,
+    "program_name": "Child Tax Credit (CTC) including Additional CTC (Refundable)",
+    "federal_agency": "U.S. Department of the Treasury / IRS",
+    "subagency": "N/A",
+    "need_categories": [
+      "Child poverty",
+      "family income support"
+    ],
+    "recipient_types": [
+      "Families with dependent children under 17"
+    ],
+    "benefit_mechanism_raw": "TAX-CREDIT",
+    "benefit_mechanisms": [
+      "TAX-CREDIT"
+    ],
+    "welfare_stack_relationship": "Second largest family income support after EITC; refundable portion reaches lowest-income families",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 1",
+    "rationale": "Up to $2000/child ($1700 refundable in 2025); ~90% of families with children claim it; state child tax credits expanding nationally.",
+    "official_source_url": "https://www.irs.gov/credits-deductions/individuals/child-tax-credit",
+    "verification_status": "Verified \u2014 IRS/Treasury primary source"
+  },
+  {
+    "program_id": 8,
+    "program_name": "Special Supplemental Nutrition Program for Women Infants and Children (WIC)",
+    "federal_agency": "USDA",
+    "subagency": "Food and Nutrition Service (FNS)",
+    "need_categories": [
+      "Maternal/child nutrition",
+      "early childhood",
+      "poverty"
+    ],
+    "recipient_types": [
+      "Pregnant, postpartum, and breastfeeding women",
+      "infants",
+      "children under 5 at nutritional risk"
+    ],
+    "benefit_mechanism_raw": "VOUCHER",
+    "benefit_mechanisms": [
+      "VOUCHER"
+    ],
+    "welfare_stack_relationship": "Upstream health investment; strong co-enrollment with Medicaid and SNAP",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 1",
+    "rationale": "~6.5 million participants/month; state WIC agencies distribute federally-defined food packages; strong SNAP/Medicaid co-enrollment makes it a key welfare stack connector.",
+    "official_source_url": "https://www.fns.usda.gov/wic",
+    "verification_status": "Verified \u2014 USDA FNS primary source"
+  },
+  {
+    "program_id": 9,
+    "program_name": "Medicaid",
+    "federal_agency": "HHS",
+    "subagency": "Centers for Medicare & Medicaid Services (CMS)",
+    "need_categories": [
+      "Health coverage",
+      "poverty",
+      "disability",
+      "aging",
+      "children",
+      "pregnancy"
+    ],
+    "recipient_types": [
+      "Low-income individuals and families",
+      "elderly",
+      "disabled",
+      "children",
+      "pregnant women"
+    ],
+    "benefit_mechanism_raw": "DIRECT-SERVICE",
+    "benefit_mechanisms": [
+      "DIRECT-SERVICE"
+    ],
+    "welfare_stack_relationship": "Largest public health insurer; SSI/TANF receipt often triggers automatic Medicaid; ACA expansion covers adults \u2264138% FPL",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 2",
+    "rationale": ">90 million enrolled; ~$900B/year federal-state spending; state waiver programs and expansion status make it the highest-priority state database candidate in health coverage.",
+    "official_source_url": "https://www.medicaid.gov",
+    "verification_status": "Verified \u2014 CMS/Medicaid.gov primary source"
+  },
+  {
+    "program_id": 10,
+    "program_name": "Children's Health Insurance Program (CHIP)",
+    "federal_agency": "HHS",
+    "subagency": "Centers for Medicare & Medicaid Services (CMS)",
+    "need_categories": [
+      "Children's health",
+      "family income support"
+    ],
+    "recipient_types": [
+      "Uninsured children in families above Medicaid limits",
+      "pregnant women in some states"
+    ],
+    "benefit_mechanism_raw": "DIRECT-SERVICE",
+    "benefit_mechanisms": [
+      "DIRECT-SERVICE"
+    ],
+    "welfare_stack_relationship": "Fills coverage gap for children between Medicaid and private insurance; enhanced federal match rate",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 2",
+    "rationale": "~7 million children enrolled; states choose separate CHIP or Medicaid-expansion model creating meaningful state-level database differentiation.",
+    "official_source_url": "https://www.medicaid.gov/chip",
+    "verification_status": "Verified \u2014 CMS/Medicaid.gov primary source"
+  },
+  {
+    "program_id": 11,
+    "program_name": "Medicare (Parts A, B, C, D)",
+    "federal_agency": "HHS",
+    "subagency": "Centers for Medicare & Medicaid Services (CMS)",
+    "need_categories": [
+      "Aging",
+      "disability",
+      "health coverage",
+      "ESRD"
+    ],
+    "recipient_types": [
+      "Adults 65+",
+      "disabled individuals after 24-month SSDI wait",
+      "ESRD patients"
+    ],
+    "benefit_mechanism_raw": "DIRECT-SERVICE, INSURANCE",
+    "benefit_mechanisms": [
+      "DIRECT-SERVICE",
+      "INSURANCE"
+    ],
+    "welfare_stack_relationship": "Foundational senior/disability health coverage; MSPs and Part D LIS are low-income sub-programs",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 2",
+    "rationale": "~67 million beneficiaries; $1T+ federal spending; Medicare Savings Programs administered by states provide premium/cost-sharing assistance.",
+    "official_source_url": "https://www.medicare.gov/basics/get-started-with-medicare/medicare-basics/parts-of-medicare",
+    "verification_status": "Verified \u2014 Medicare.gov primary source"
+  },
+  {
+    "program_id": 12,
+    "program_name": "ACA Premium Tax Credit (PTC) / Cost-Sharing Reductions (CSR)",
+    "federal_agency": "U.S. Department of the Treasury / HHS",
+    "subagency": "IRS; CMS (Marketplace)",
+    "need_categories": [
+      "Health coverage",
+      "uninsured workers",
+      "income support"
+    ],
+    "recipient_types": [
+      "Individuals and families purchasing Marketplace plans (income 100\u2013400%+ FPL)"
+    ],
+    "benefit_mechanism_raw": "TAX-CREDIT",
+    "benefit_mechanisms": [
+      "TAX-CREDIT"
+    ],
+    "welfare_stack_relationship": "Bridges Medicaid cutoff to full-cost private insurance; IRA expanded eligibility through 2025+",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 2",
+    "rationale": "~20 million Marketplace enrollees; average subsidy of $536/month (2024); state-based marketplaces create state database variation in eligibility and plan offerings.",
+    "official_source_url": "https://www.irs.gov/affordable-care-act/individuals-and-families/the-premium-tax-credit-the-basics",
+    "verification_status": "Verified \u2014 IRS primary source"
+  },
+  {
+    "program_id": 13,
+    "program_name": "Housing Choice Voucher Program (Section 8 HCV)",
+    "federal_agency": "HUD",
+    "subagency": "Office of Public and Indian Housing (PIH)",
+    "need_categories": [
+      "Housing",
+      "poverty",
+      "homelessness prevention"
+    ],
+    "recipient_types": [
+      "Very low-income families",
+      "elderly",
+      "disabled"
+    ],
+    "benefit_mechanism_raw": "VOUCHER",
+    "benefit_mechanisms": [
+      "VOUCHER"
+    ],
+    "welfare_stack_relationship": "Largest federal rental assistance program; ~2000 local PHAs administer waiting lists",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 3",
+    "rationale": "2.3M+ households assisted; ~2000 local PHAs each maintain waiting lists; PHA-level data is a critical candidate for the state/local pass-through database layer.",
+    "official_source_url": "https://www.hud.gov/helping-americans/housing-choice-vouchers-tenants",
+    "verification_status": "Verified \u2014 HUD primary source"
+  },
+  {
+    "program_id": 14,
+    "program_name": "Public Housing Program",
+    "federal_agency": "HUD",
+    "subagency": "Office of Public and Indian Housing (PIH)",
+    "need_categories": [
+      "Housing",
+      "poverty",
+      "income support"
+    ],
+    "recipient_types": [
+      "Low-income families",
+      "elderly",
+      "disabled (~970000 households)"
+    ],
+    "benefit_mechanism_raw": "DIRECT-SERVICE",
+    "benefit_mechanisms": [
+      "DIRECT-SERVICE"
+    ],
+    "welfare_stack_relationship": "Distinct from voucher assistance; HUD funds local housing authorities who own/manage stock",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 3",
+    "rationale": "~970000 households in federally-owned/managed units; ~3300 housing authorities; separate mechanism from HCV with distinct eligibility rules.",
+    "official_source_url": "https://www.hud.gov/helping-americans/public-housing",
+    "verification_status": "Verified \u2014 HUD primary source"
+  },
+  {
+    "program_id": 15,
+    "program_name": "Project-Based Rental Assistance (PBRA / Section 8 Multifamily)",
+    "federal_agency": "HUD",
+    "subagency": "Office of Multifamily Housing Programs",
+    "need_categories": [
+      "Housing",
+      "poverty",
+      "rental affordability"
+    ],
+    "recipient_types": [
+      "Low-income families",
+      "elderly",
+      "disabled in assisted multifamily units"
+    ],
+    "benefit_mechanism_raw": "SUBSIDY",
+    "benefit_mechanisms": [
+      "SUBSIDY"
+    ],
+    "welfare_stack_relationship": "Tied to specific units not households; complements HCV; older Section 8 contracts",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 3",
+    "rationale": "~1.2M assisted multifamily units under long-term HUD contracts; distinct from HCV \u2014 assistance stays with property requiring separate tracking.",
+    "official_source_url": "https://www.hud.gov/program_offices/housing/mfh/progdesc/rentsupp",
+    "verification_status": "Verified \u2014 HUD program description"
+  },
+  {
+    "program_id": 16,
+    "program_name": "HUD-VASH (Veterans Affairs Supportive Housing)",
+    "federal_agency": "HUD / VA",
+    "subagency": "PIH (HUD); VHA (VA)",
+    "need_categories": [
+      "Housing",
+      "veteran services",
+      "homelessness",
+      "mental health"
+    ],
+    "recipient_types": [
+      "Homeless veterans and their families"
+    ],
+    "benefit_mechanism_raw": "VOUCHER, DIRECT-SERVICE",
+    "benefit_mechanisms": [
+      "VOUCHER",
+      "DIRECT-SERVICE"
+    ],
+    "welfare_stack_relationship": "Joint HUD-VA program combining HCV voucher with VA case management and clinical services",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 3",
+    "rationale": "116000+ vouchers awarded since 2008; available in all 50 states; joint HUD/VA mechanism requires separate indexing from general HCV.",
+    "official_source_url": "https://www.hud.gov/helping-americans/housing-choice-vouchers-homeless-veterans",
+    "verification_status": "Verified \u2014 HUD/VA primary sources"
+  },
+  {
+    "program_id": 17,
+    "program_name": "Community Development Block Grant (CDBG)",
+    "federal_agency": "HUD",
+    "subagency": "Office of Community Planning and Development (CPD)",
+    "need_categories": [
+      "Housing",
+      "community development",
+      "economic opportunity",
+      "public services"
+    ],
+    "recipient_types": [
+      "States",
+      "metropolitan cities",
+      "urban counties",
+      "nonprofits",
+      "low/mod-income residents"
+    ],
+    "benefit_mechanism_raw": "GRANT-FORMULA",
+    "benefit_mechanisms": [
+      "GRANT-FORMULA"
+    ],
+    "welfare_stack_relationship": "Flexible pass-through enabling local housing, infrastructure, and social service investments; \u226570% must benefit LMI persons",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": false,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 3",
+    "rationale": "~$3.3B/year flowing to states and local governments; grantee-level tracking is a state/local pass-through database candidate.",
+    "official_source_url": "https://www.hud.gov/hud-partners/community-cdbg",
+    "verification_status": "Verified \u2014 HUD primary source"
+  },
+  {
+    "program_id": 18,
+    "program_name": "HOME Investment Partnerships Program",
+    "federal_agency": "HUD",
+    "subagency": "Office of Community Planning and Development (CPD)",
+    "need_categories": [
+      "Affordable housing",
+      "rental",
+      "homeownership",
+      "low-income households"
+    ],
+    "recipient_types": [
+      "States",
+      "local governments",
+      "nonprofits",
+      "low-income renters and homebuyers"
+    ],
+    "benefit_mechanism_raw": "GRANT-FORMULA",
+    "benefit_mechanisms": [
+      "GRANT-FORMULA"
+    ],
+    "welfare_stack_relationship": "Largest federal block grant exclusively for affordable housing; 25-cent locality match required",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": false,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 3",
+    "rationale": "~$1.5B/year; exclusively for affordable housing creation; creates units feeding into long-term rental subsidy and homeownership programs.",
+    "official_source_url": "https://www.hudexchange.info/programs/home/",
+    "verification_status": "Verified \u2014 HUD Exchange primary source"
+  },
+  {
+    "program_id": 19,
+    "program_name": "Emergency Solutions Grants (ESG) Program",
+    "federal_agency": "HUD",
+    "subagency": "Office of Community Planning and Development (CPD)",
+    "need_categories": [
+      "Homelessness",
+      "emergency shelter",
+      "rapid re-housing"
+    ],
+    "recipient_types": [
+      "Homeless individuals and families",
+      "persons at risk of homelessness"
+    ],
+    "benefit_mechanism_raw": "GRANT-FORMULA",
+    "benefit_mechanisms": [
+      "GRANT-FORMULA"
+    ],
+    "welfare_stack_relationship": "Homeless services infrastructure complement to HUD Continuum of Care grants",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": false,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 3",
+    "rationale": "Funds emergency shelter, street outreach, rapid re-housing, and homelessness prevention; pairs with CoC grants to form the federal homeless assistance architecture.",
+    "official_source_url": "https://www.hudexchange.info/programs/esg/",
+    "verification_status": "Verified \u2014 HUD Exchange primary source"
+  },
+  {
+    "program_id": 20,
+    "program_name": "Low-Income Housing Tax Credit (LIHTC)",
+    "federal_agency": "U.S. Department of the Treasury",
+    "subagency": "IRS / State Housing Finance Agencies",
+    "need_categories": [
+      "Affordable rental housing",
+      "developers",
+      "low-income renters"
+    ],
+    "recipient_types": [
+      "States (credits allocated to HFAs)",
+      "developers",
+      "low-income renters at \u226460% AMI"
+    ],
+    "benefit_mechanism_raw": "TAX-CREDIT",
+    "benefit_mechanisms": [
+      "TAX-CREDIT"
+    ],
+    "welfare_stack_relationship": "Finances nearly all affordable rental housing development; units feed into HCV and PBRA subsidy layering",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": false,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 3",
+    "rationale": "~$10.5B/year in annual budget authority; largest source of federal affordable housing financing; LIHTC unit locations and rent restrictions are state database candidates.",
+    "official_source_url": "https://www.huduser.gov/portal/datasets/lihtc.html",
+    "verification_status": "Verified \u2014 HUD User LIHTC dataset documentation"
+  },
+  {
+    "program_id": 21,
+    "program_name": "VA Disability Compensation",
+    "federal_agency": "VA",
+    "subagency": "Veterans Benefits Administration (VBA)",
+    "need_categories": [
+      "Disability",
+      "income support",
+      "veterans"
+    ],
+    "recipient_types": [
+      "Veterans with service-connected disabilities"
+    ],
+    "benefit_mechanism_raw": "CASH",
+    "benefit_mechanisms": [
+      "CASH"
+    ],
+    "welfare_stack_relationship": "Service-connected cash benefit; does not reduce SSI/SSDI; triggers other VA programs, some state veterans benefits",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 4",
+    "rationale": "~5.5 million recipients; $150B+ total VA disability spending; state veterans benefits and property tax exemptions layer on top making state database linking relevant.",
+    "official_source_url": "https://www.va.gov/disability/",
+    "verification_status": "Verified \u2014 VA.gov primary source"
+  },
+  {
+    "program_id": 22,
+    "program_name": "VA Pension (Veterans Pension / Survivors Pension)",
+    "federal_agency": "VA",
+    "subagency": "Veterans Benefits Administration (VBA)",
+    "need_categories": [
+      "Aging",
+      "poverty",
+      "income support",
+      "veterans"
+    ],
+    "recipient_types": [
+      "Low-income wartime veterans (age 65+ or permanently disabled)",
+      "surviving spouses"
+    ],
+    "benefit_mechanism_raw": "CASH",
+    "benefit_mechanisms": [
+      "CASH"
+    ],
+    "welfare_stack_relationship": "Means-tested income support for wartime veterans; Aid and Attendance supplement for in-home care",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": false,
+    "priority_batch": "Batch 4",
+    "rationale": "Needs-based cash pension for low-income wartime veterans; Aid and Attendance supplement for those requiring in-home care is an often-overlooked benefit.",
+    "official_source_url": "https://www.va.gov/pension/",
+    "verification_status": "Verified \u2014 VA.gov primary source"
+  },
+  {
+    "program_id": 23,
+    "program_name": "Post-9/11 GI Bill (Chapter 33)",
+    "federal_agency": "VA",
+    "subagency": "Veterans Benefits Administration (VBA) \u2014 Education Service",
+    "need_categories": [
+      "Education",
+      "workforce",
+      "veterans",
+      "military families"
+    ],
+    "recipient_types": [
+      "Veterans, service members, and eligible dependents with 90+ days active service post-9/11"
+    ],
+    "benefit_mechanism_raw": "GRANT-FORMULA",
+    "benefit_mechanisms": [
+      "GRANT-FORMULA"
+    ],
+    "welfare_stack_relationship": "Most-used VA education benefit; Yellow Ribbon Program supplements for higher-cost schools",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": false,
+    "priority_batch": "Batch 4",
+    "rationale": "~500000 annual users; pays full tuition at public schools + monthly housing allowance (BAH rate) + $1000/year book stipend.",
+    "official_source_url": "https://www.va.gov/education/",
+    "verification_status": "Verified \u2014 VA.gov primary source"
+  },
+  {
+    "program_id": 24,
+    "program_name": "Federal Pell Grant Program",
+    "federal_agency": "U.S. Department of Education (ED)",
+    "subagency": "Federal Student Aid (FSA)",
+    "need_categories": [
+      "Higher education",
+      "low-income students",
+      "workforce development"
+    ],
+    "recipient_types": [
+      "Undergraduate students demonstrating financial need"
+    ],
+    "benefit_mechanism_raw": "GRANT-COMPETITIVE",
+    "benefit_mechanisms": [
+      "GRANT-COMPETITIVE"
+    ],
+    "welfare_stack_relationship": "Foundation of federal student aid; coordinates with Direct Loans and PLUS Loans",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": false,
+    "priority_batch": "Batch 5",
+    "rationale": "~7 million recipients/year; maximum $7395 award (2025-26); needs-based entitlement structure directly affects lowest-income student access to higher education.",
+    "official_source_url": "https://studentaid.gov/understand-aid/types/grants/pell",
+    "verification_status": "Verified \u2014 Federal Student Aid primary source"
+  },
+  {
+    "program_id": 25,
+    "program_name": "Federal Direct Loan Program (Subsidized & Unsubsidized Stafford Loans)",
+    "federal_agency": "U.S. Department of Education (ED)",
+    "subagency": "Federal Student Aid (FSA)",
+    "need_categories": [
+      "Higher education",
+      "student debt",
+      "workforce development"
+    ],
+    "recipient_types": [
+      "Eligible undergraduate and graduate students at accredited institutions"
+    ],
+    "benefit_mechanism_raw": "LOAN",
+    "benefit_mechanisms": [
+      "LOAN"
+    ],
+    "welfare_stack_relationship": "Subsidized interest is a federal benefit; IDR plans and PSLF forgiveness are downstream welfare stack components",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": false,
+    "priority_batch": "Batch 5",
+    "rationale": "~$80B+ in new originations/year; subsidized interest during enrollment represents direct federal transfer; IDR and forgiveness programs are critical downstream stack components.",
+    "official_source_url": "https://studentaid.gov/understand-aid/types/loans/subsidized-unsubsidized",
+    "verification_status": "Verified \u2014 Federal Student Aid primary source"
+  },
+  {
+    "program_id": 26,
+    "program_name": "Title I Part A \u2014 Improving Basic Programs (ESEA/ESSA)",
+    "federal_agency": "U.S. Department of Education (ED)",
+    "subagency": "Office of Elementary and Secondary Education (OESE)",
+    "need_categories": [
+      "Education",
+      "poverty",
+      "K-12",
+      "disadvantaged students"
+    ],
+    "recipient_types": [
+      "Local educational agencies (LEAs/school districts) with concentrations of low-income students"
+    ],
+    "benefit_mechanism_raw": "GRANT-FORMULA",
+    "benefit_mechanisms": [
+      "GRANT-FORMULA"
+    ],
+    "welfare_stack_relationship": "Largest K-12 federal formula grant; funds supplemental academic support for disadvantaged students",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": false,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 5",
+    "rationale": "~$18B/year flowing to ~13000 school districts; school-district-level allocations are public data making this a top state/local pass-through database candidate.",
+    "official_source_url": "https://www.ed.gov/grants-and-programs/formula-grants/school-improvement-grants/title-i-part-improving-basic-programs-operated-local-educational-agencies",
+    "verification_status": "Verified \u2014 U.S. Department of Education primary source"
+  },
+  {
+    "program_id": 27,
+    "program_name": "Low Income Home Energy Assistance Program (LIHEAP)",
+    "federal_agency": "HHS",
+    "subagency": "Administration for Children and Families (ACF), Office of Community Services",
+    "need_categories": [
+      "Energy",
+      "utilities",
+      "poverty",
+      "winter/summer crisis"
+    ],
+    "recipient_types": [
+      "Low-income households (priority: elderly, disabled, very young children)"
+    ],
+    "benefit_mechanism_raw": "GRANT-FORMULA",
+    "benefit_mechanisms": [
+      "GRANT-FORMULA"
+    ],
+    "welfare_stack_relationship": "Block grant to states for heating/cooling/crisis/weatherization assistance; extreme state-to-state variation",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 6",
+    "rationale": "~$4B/year; state LIHEAP offices vary significantly in benefit amounts and delivery methods; a high-priority state database candidate due to extreme state-to-state variation.",
+    "official_source_url": "https://www.acf.hhs.gov/ocs/programs/liheap",
+    "verification_status": "Verified \u2014 ACF/HHS primary source"
+  },
+  {
+    "program_id": 28,
+    "program_name": "Weatherization Assistance Program (WAP)",
+    "federal_agency": "U.S. Department of Energy (DOE)",
+    "subagency": "Office of State and Community Energy Programs",
+    "need_categories": [
+      "Energy efficiency",
+      "poverty",
+      "housing quality"
+    ],
+    "recipient_types": [
+      "Low-income homeowners and renters (income \u2264200% FPL or receiving SSI/TANF)"
+    ],
+    "benefit_mechanism_raw": "DIRECT-SERVICE",
+    "benefit_mechanisms": [
+      "DIRECT-SERVICE"
+    ],
+    "welfare_stack_relationship": "Permanent energy cost reduction complement to LIHEAP's temporary assistance",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 6",
+    "rationale": "Provides permanent energy efficiency upgrades averaging $2000-$6000/household in federal investment; state WAP agencies maintain waiting lists.",
+    "official_source_url": "https://www.energy.gov/scep/wap/weatherization-assistance-program",
+    "verification_status": "Verified \u2014 DOE primary source"
+  },
+  {
+    "program_id": 29,
+    "program_name": "FCC Lifeline Program",
+    "federal_agency": "Federal Communications Commission (FCC)",
+    "subagency": "Universal Service Administrative Company (USAC)",
+    "need_categories": [
+      "Telecommunications",
+      "digital access",
+      "poverty"
+    ],
+    "recipient_types": [
+      "Low-income households (income \u2264135% FPL or enrolled in qualifying federal programs)"
+    ],
+    "benefit_mechanism_raw": "SUBSIDY",
+    "benefit_mechanisms": [
+      "SUBSIDY"
+    ],
+    "welfare_stack_relationship": "Up to $9.25/month discount on phone/internet; $34.25 on Tribal lands; categorical eligibility based on SNAP/Medicaid/SSI enrollment",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 6",
+    "rationale": "~7 million subscribers; categorical eligibility based on federal benefit enrollment makes it a welfare stack gateway node; Oregon and Texas administer their own verifier variants.",
+    "official_source_url": "https://www.lifelinesupport.org",
+    "verification_status": "Verified \u2014 USAC primary source"
+  },
+  {
+    "program_id": 30,
+    "program_name": "National School Lunch Program (NSLP) / School Breakfast Program (SBP)",
+    "federal_agency": "USDA",
+    "subagency": "Food and Nutrition Service (FNS)",
+    "need_categories": [
+      "Child nutrition",
+      "education",
+      "food security"
+    ],
+    "recipient_types": [
+      "School-age children (free meals: \u2264130% FPL",
+      "reduced: 130-185% FPL)"
+    ],
+    "benefit_mechanism_raw": "IN-KIND",
+    "benefit_mechanisms": [
+      "IN-KIND"
+    ],
+    "welfare_stack_relationship": "Subsidized/free meals at school; per-meal federal reimbursement; Community Eligibility Provision allows universal free meals at high-poverty schools",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 7",
+    "rationale": "~30 million children in NSLP; ~15 million in SBP; indexed as one program family (FNS administers jointly); school-level participation data is a state database candidate.",
+    "official_source_url": "https://www.fns.usda.gov/nslp/national-school-lunch-program-nslp",
+    "verification_status": "Verified \u2014 USDA FNS primary source"
+  },
+  {
+    "program_id": 31,
+    "program_name": "Head Start / Early Head Start",
+    "federal_agency": "HHS",
+    "subagency": "Administration for Children and Families (ACF) / Office of Head Start",
+    "need_categories": [
+      "Early childhood",
+      "poverty",
+      "education",
+      "family services"
+    ],
+    "recipient_types": [
+      "Children ages 0-5 in families \u2264100% FPL",
+      "pregnant women"
+    ],
+    "benefit_mechanism_raw": "DIRECT-SERVICE",
+    "benefit_mechanisms": [
+      "DIRECT-SERVICE"
+    ],
+    "welfare_stack_relationship": "Child poverty gateway service; Head Start grantees receive competitive grants and administer locally",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 7",
+    "rationale": "~800000 children enrolled; competitive federal grants to local agencies create a grantee-level database candidate; comprehensive services make it a unique welfare stack node.",
+    "official_source_url": "https://www.acf.hhs.gov/ohs",
+    "verification_status": "Verified \u2014 ACF/HHS primary source"
+  },
+  {
+    "program_id": 32,
+    "program_name": "Child Care and Development Fund (CCDF)",
+    "federal_agency": "HHS",
+    "subagency": "Administration for Children and Families (ACF)",
+    "need_categories": [
+      "Child care",
+      "working families",
+      "poverty"
+    ],
+    "recipient_types": [
+      "Low-income families with children under 13",
+      "parents working or in training"
+    ],
+    "benefit_mechanism_raw": "GRANT-FORMULA",
+    "benefit_mechanisms": [
+      "GRANT-FORMULA"
+    ],
+    "welfare_stack_relationship": "CCDBG block grant + mandatory CCES funding; states provide subsidies to families; $12.38B combined federal investment in FY2026; TANF can transfer up to 30% to CCDF",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 7",
+    "rationale": "$12.38B FY2026 combined federal investment; states set copay schedules and provider rates \u2014 high-variation state database candidate critical to working-family welfare stack.",
+    "official_source_url": "https://www.acf.hhs.gov/occ/ccdf-programs",
+    "verification_status": "Verified \u2014 ACF/HHS primary source"
+  },
+  {
+    "program_id": 33,
+    "program_name": "The Emergency Food Assistance Program (TEFAP)",
+    "federal_agency": "USDA",
+    "subagency": "Food and Nutrition Service (FNS)",
+    "need_categories": [
+      "Food security",
+      "emergency nutrition",
+      "poverty"
+    ],
+    "recipient_types": [
+      "Low-income households (via food banks, soup kitchens, food pantries)"
+    ],
+    "benefit_mechanism_raw": "COMMODITY",
+    "benefit_mechanisms": [
+      "COMMODITY"
+    ],
+    "welfare_stack_relationship": "Supplements SNAP with physical food distribution through food bank network",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 7",
+    "rationale": "USDA purchases 100% American-grown commodities and distributes through states; complements SNAP for households with acute food needs; state distribution network is a database candidate.",
+    "official_source_url": "https://www.fns.usda.gov/tefap/emergency-food-assistance-program",
+    "verification_status": "Verified \u2014 USDA FNS primary source"
+  },
+  {
+    "program_id": 34,
+    "program_name": "Older Americans Act (OAA) Nutrition Programs (Title III-C)",
+    "federal_agency": "HHS",
+    "subagency": "Administration for Community Living (ACL) / Administration on Aging (AoA)",
+    "need_categories": [
+      "Senior nutrition",
+      "aging",
+      "food security"
+    ],
+    "recipient_types": [
+      "Adults 60+ (priority: lowest-income, minority, rural, limited English)"
+    ],
+    "benefit_mechanism_raw": "IN-KIND",
+    "benefit_mechanisms": [
+      "IN-KIND"
+    ],
+    "welfare_stack_relationship": "Congregate meals at senior centers; home-delivered meals (Meals on Wheels); no income test; targets greatest need",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 7",
+    "rationale": "~145 million congregate + home-delivered meals/year; no income test; AAA delivery network makes this a candidate for the state/local services database layer.",
+    "official_source_url": "https://acl.gov/programs/nutrition-programs",
+    "verification_status": "Verified \u2014 ACL primary source"
+  },
+  {
+    "program_id": 35,
+    "program_name": "Food Distribution Program on Indian Reservations (FDPIR)",
+    "federal_agency": "USDA",
+    "subagency": "Food and Nutrition Service (FNS)",
+    "need_categories": [
+      "Food security",
+      "tribal communities",
+      "Indigenous populations"
+    ],
+    "recipient_types": [
+      "Income-eligible American Indian/Alaska Native households on or near reservations"
+    ],
+    "benefit_mechanism_raw": "COMMODITY",
+    "benefit_mechanisms": [
+      "COMMODITY"
+    ],
+    "welfare_stack_relationship": "Alternative to SNAP for tribal communities; administered by Indian Tribal Organizations",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 7",
+    "rationale": "110 administering agencies (107 ITOs + 3 state agencies) serving ~85000+ individuals/month; an alternative to SNAP specifically for tribal geographies requiring distinct database treatment.",
+    "official_source_url": "https://www.fns.usda.gov/fdpir/food-distribution-program-indian-reservations",
+    "verification_status": "Verified \u2014 USDA FNS primary source"
+  },
+  {
+    "program_id": 36,
+    "program_name": "Unemployment Insurance (UI) \u2014 Federal-State System",
+    "federal_agency": "U.S. Department of Labor (DOL)",
+    "subagency": "Employment and Training Administration (ETA)",
+    "need_categories": [
+      "Job loss",
+      "income replacement",
+      "workers"
+    ],
+    "recipient_types": [
+      "Workers who lost employment through no fault of their own"
+    ],
+    "benefit_mechanism_raw": "CASH",
+    "benefit_mechanisms": [
+      "CASH"
+    ],
+    "welfare_stack_relationship": "Weekly benefit; funded by FUTA employer tax + state SUTA; ~26 weeks base; federal extended benefits trigger in high unemployment",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 8",
+    "rationale": "~$30B+ in peak years; wide state variation in benefit levels duration and work requirements; state-level weekly benefit amounts and eligibility rules are a high-priority database candidate.",
+    "official_source_url": "https://oui.doleta.gov/unemploy/",
+    "verification_status": "Verified \u2014 DOL/ETA primary source"
+  },
+  {
+    "program_id": 37,
+    "program_name": "WIOA Title I \u2014 Adult / Dislocated Worker / Youth Employment & Training",
+    "federal_agency": "U.S. Department of Labor (DOL)",
+    "subagency": "Employment and Training Administration (ETA)",
+    "need_categories": [
+      "Workforce",
+      "employment",
+      "skills training",
+      "youth"
+    ],
+    "recipient_types": [
+      "Low-income adults",
+      "dislocated workers",
+      "youth 14-24 with barriers to employment"
+    ],
+    "benefit_mechanism_raw": "DIRECT-SERVICE, GRANT-FORMULA",
+    "benefit_mechanisms": [
+      "DIRECT-SERVICE",
+      "GRANT-FORMULA"
+    ],
+    "welfare_stack_relationship": "Funds workforce development system (American Job Centers); interfaces with UI and SNAP E&T",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 8",
+    "rationale": "$2.9B+ in FY2023 formula funding across Adult/Dislocated Worker/Youth; American Job Center network delivers services in all states making local program data a key database candidate.",
+    "official_source_url": "https://www.dol.gov/agencies/eta/wioa/programs",
+    "verification_status": "Verified \u2014 DOL ETA primary source"
+  },
+  {
+    "program_id": 38,
+    "program_name": "Registered Apprenticeship Program",
+    "federal_agency": "U.S. Department of Labor (DOL)",
+    "subagency": "Employment and Training Administration (ETA) / Office of Apprenticeship",
+    "need_categories": [
+      "Workforce",
+      "skills training",
+      "workers"
+    ],
+    "recipient_types": [
+      "Workers (apprentices)",
+      "employers",
+      "industry sponsors"
+    ],
+    "benefit_mechanism_raw": "DIRECT-SERVICE, SUBSIDY",
+    "benefit_mechanisms": [
+      "DIRECT-SERVICE",
+      "SUBSIDY"
+    ],
+    "welfare_stack_relationship": "Paid on-the-job learning + related instruction; DOL or state agency registration and support; WIOA funding can support costs",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 8",
+    "rationale": "~600000 active apprentices; DOL or state agency registration required; apprenticeship program finder data is publicly available and a database candidate for workforce navigation.",
+    "official_source_url": "https://www.apprenticeship.gov",
+    "verification_status": "Verified \u2014 DOL Apprenticeship.gov primary source"
+  },
+  {
+    "program_id": 39,
+    "program_name": "USDA Farm Commodity Programs (ARC / PLC / Marketing Assistance Loans)",
+    "federal_agency": "USDA",
+    "subagency": "Farm Service Agency (FSA)",
+    "need_categories": [
+      "Farm income",
+      "agricultural risk",
+      "food supply"
+    ],
+    "recipient_types": [
+      "Agricultural producers",
+      "commodity crop farmers"
+    ],
+    "benefit_mechanism_raw": "CASH, LOAN",
+    "benefit_mechanisms": [
+      "CASH",
+      "LOAN"
+    ],
+    "welfare_stack_relationship": "Counter-cyclical and price loss coverage payments; marketing assistance loans; Farm Bill authorized; layered with crop insurance",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": false,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 9",
+    "rationale": "Multi-billion dollar annual commodity support transfers value to agricultural producers; FSA payment data is publicly available at county level making it a pass-through database candidate.",
+    "official_source_url": "https://www.fsa.usda.gov/programs-and-services/farm-bill/",
+    "verification_status": "Verified \u2014 USDA FSA primary source"
+  },
+  {
+    "program_id": 40,
+    "program_name": "Federal Crop Insurance Program (FCIC / RMA)",
+    "federal_agency": "USDA",
+    "subagency": "Risk Management Agency (RMA)",
+    "need_categories": [
+      "Agricultural risk",
+      "farm income",
+      "food supply"
+    ],
+    "recipient_types": [
+      "Farmers and agricultural producers"
+    ],
+    "benefit_mechanism_raw": "INSURANCE",
+    "benefit_mechanisms": [
+      "INSURANCE"
+    ],
+    "welfare_stack_relationship": "Federally subsidized crop insurance premiums; indemnity payments on loss; complements FSA commodity programs",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": false,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 9",
+    "rationale": "Federal government subsidizes ~60% of average crop insurance premium; $17B+ in annual premium subsidies; county-level actuarial data is publicly available.",
+    "official_source_url": "https://rma.usda.gov",
+    "verification_status": "Verified \u2014 USDA RMA primary source"
+  },
+  {
+    "program_id": 41,
+    "program_name": "USDA Rural Housing Service \u2014 Single Family Housing Programs (Sections 502/504/515)",
+    "federal_agency": "USDA",
+    "subagency": "Rural Development / Rural Housing Service",
+    "need_categories": [
+      "Rural housing",
+      "homeownership",
+      "housing repair"
+    ],
+    "recipient_types": [
+      "Low/very-low income rural households",
+      "rural renters"
+    ],
+    "benefit_mechanism_raw": "LOAN, GUARANTEE, GRANT",
+    "benefit_mechanisms": [
+      "LOAN",
+      "GUARANTEE",
+      "GRANT"
+    ],
+    "welfare_stack_relationship": "Section 502 direct loans; Section 502 guaranteed loans; Section 504 repair loans/grants; rural housing infrastructure complement to HUD programs",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 9",
+    "rationale": "Zero-down financing for rural homebuyers who cannot obtain credit elsewhere; Section 504 grants available to homeowners 62+ for safety repairs; critical for rural welfare stack coverage.",
+    "official_source_url": "https://www.rd.usda.gov/programs-services/single-family-housing-programs",
+    "verification_status": "Verified \u2014 USDA Rural Development primary source"
+  },
+  {
+    "program_id": 42,
+    "program_name": "SBA 7(a) Loan Program",
+    "federal_agency": "U.S. Small Business Administration (SBA)",
+    "subagency": "N/A",
+    "need_categories": [
+      "Business development",
+      "employment",
+      "economic growth"
+    ],
+    "recipient_types": [
+      "Small businesses (for-profit, U.S.-based, creditworthy)"
+    ],
+    "benefit_mechanism_raw": "GUARANTEE",
+    "benefit_mechanisms": [
+      "GUARANTEE"
+    ],
+    "welfare_stack_relationship": "Primary SBA loan guarantee enabling credit access for businesses that cannot obtain conventional financing",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": false,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 10",
+    "rationale": "SBA's primary loan guarantee; SBA publishes 7(a) loan data by state, county, and industry making it a searchable business database candidate.",
+    "official_source_url": "https://www.sba.gov/funding-programs/loans/7a-loans",
+    "verification_status": "Verified \u2014 SBA primary source"
+  },
+  {
+    "program_id": 43,
+    "program_name": "SBA 504 Loan Program",
+    "federal_agency": "U.S. Small Business Administration (SBA)",
+    "subagency": "N/A",
+    "need_categories": [
+      "Business capital investment",
+      "job creation"
+    ],
+    "recipient_types": [
+      "Small businesses with tangible net worth <$20M"
+    ],
+    "benefit_mechanism_raw": "LOAN",
+    "benefit_mechanisms": [
+      "LOAN"
+    ],
+    "welfare_stack_relationship": "Fixed-rate long-term financing for major fixed assets via Certified Development Company network",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": false,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 10",
+    "rationale": "Below-market fixed-rate financing for major fixed assets via CDC network; distinct mechanism from 7(a) requiring separate database treatment.",
+    "official_source_url": "https://www.sba.gov/funding-programs/loans/504-loans",
+    "verification_status": "Verified \u2014 SBA primary source"
+  },
+  {
+    "program_id": 44,
+    "program_name": "Social Services Block Grant (SSBG)",
+    "federal_agency": "HHS",
+    "subagency": "Administration for Children and Families (ACF)",
+    "need_categories": [
+      "Child welfare",
+      "adult protective services",
+      "disability services",
+      "poverty"
+    ],
+    "recipient_types": [
+      "States (pass-through to vulnerable children, adults, families)"
+    ],
+    "benefit_mechanism_raw": "GRANT-FORMULA",
+    "benefit_mechanisms": [
+      "GRANT-FORMULA"
+    ],
+    "welfare_stack_relationship": "Capped entitlement block grant; no match required; flexible for child protective services, foster care for non-IV-E children, and adult protective services",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": false,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 11",
+    "rationale": "~$1.7B/year; served 18 million individuals in FY2023; primary federal funding stream for adult protective services which lacks other dedicated federal sources.",
+    "official_source_url": "https://www.acf.hhs.gov/ocs/programs/ssbg",
+    "verification_status": "Verified \u2014 ACF/HHS primary source"
+  },
+  {
+    "program_id": 45,
+    "program_name": "Title IV-E Foster Care and Adoption Assistance Program",
+    "federal_agency": "HHS",
+    "subagency": "Administration for Children and Families (ACF) / Children's Bureau",
+    "need_categories": [
+      "Child welfare",
+      "foster care",
+      "adoption",
+      "family support"
+    ],
+    "recipient_types": [
+      "Children in foster care",
+      "children with special needs being adopted",
+      "foster/adoptive families"
+    ],
+    "benefit_mechanism_raw": "GRANT-FORMULA",
+    "benefit_mechanisms": [
+      "GRANT-FORMULA"
+    ],
+    "welfare_stack_relationship": "Open-ended federal matching (50\u201383% reimbursement); triggers automatic Medicaid for eligible children",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 11",
+    "rationale": "Open-ended federal match means states receive unlimited reimbursement for qualifying foster care; IV-E eligibility triggers automatic Medicaid; critical node in child welfare welfare stack.",
+    "official_source_url": "https://cwpm.acf.hhs.gov/citations/title-iv-e",
+    "verification_status": "Verified \u2014 ACF Children's Bureau primary source"
+  },
+  {
+    "program_id": 46,
+    "program_name": "FEMA Individuals and Households Program (IHP)",
+    "federal_agency": "DHS",
+    "subagency": "Federal Emergency Management Agency (FEMA)",
+    "need_categories": [
+      "Disaster recovery",
+      "housing",
+      "emergency needs"
+    ],
+    "recipient_types": [
+      "Disaster-affected individuals and households (presidentially declared disasters)"
+    ],
+    "benefit_mechanism_raw": "CASH, DIRECT-SERVICE",
+    "benefit_mechanisms": [
+      "CASH",
+      "DIRECT-SERVICE"
+    ],
+    "welfare_stack_relationship": "Housing repair grants; temporary lodging; other needs assistance; activated by Presidential disaster declaration; does not affect other benefit eligibility",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 12",
+    "rationale": "Triggered by Presidential declaration; provides cash for housing repair/rental and other critical needs; unique activation mechanism requires distinct database treatment from standing benefit programs.",
+    "official_source_url": "https://www.fema.gov/assistance/individual",
+    "verification_status": "Verified \u2014 FEMA primary source"
+  },
+  {
+    "program_id": 47,
+    "program_name": "National Flood Insurance Program (NFIP)",
+    "federal_agency": "DHS",
+    "subagency": "Federal Emergency Management Agency (FEMA)",
+    "need_categories": [
+      "Flood risk",
+      "property insurance",
+      "disaster risk reduction"
+    ],
+    "recipient_types": [
+      "Homeowners, renters, and businesses in NFIP-participating communities"
+    ],
+    "benefit_mechanism_raw": "INSURANCE",
+    "benefit_mechanisms": [
+      "INSURANCE"
+    ],
+    "welfare_stack_relationship": "Federally backed flood insurance; Write Your Own policies through private insurers; required for federally-backed mortgages in Special Flood Hazard Areas",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 12",
+    "rationale": "~5 million policies in force; required by federal mortgage programs in flood zones; community-level NFIP participation data is a state/local database candidate.",
+    "official_source_url": "https://www.fema.gov/flood-insurance",
+    "verification_status": "Verified \u2014 FEMA primary source"
+  },
+  {
+    "program_id": 48,
+    "program_name": "FHA Mortgage Insurance (Single-Family)",
+    "federal_agency": "HUD",
+    "subagency": "Federal Housing Administration (FHA)",
+    "need_categories": [
+      "Homeownership",
+      "mortgage access",
+      "first-time homebuyers"
+    ],
+    "recipient_types": [
+      "Homebuyers with limited down payments or credit history",
+      "first-time buyers"
+    ],
+    "benefit_mechanism_raw": "INSURANCE",
+    "benefit_mechanisms": [
+      "INSURANCE"
+    ],
+    "welfare_stack_relationship": "Federal mortgage insurance enabling low down payments (3.5% minimum); opens homeownership to households excluded from conventional markets",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": false,
+    "priority_batch": "Batch 13",
+    "rationale": "~$1T+ in FHA-insured loan portfolio; 3.5% minimum down payment enables homeownership for households with limited savings; federal guarantee creates value not available in private market.",
+    "official_source_url": "https://www.hud.gov/fha",
+    "verification_status": "Verified \u2014 HUD FHA primary source"
+  },
+  {
+    "program_id": 49,
+    "program_name": "Indian Health Service (IHS) \u2014 Direct Health Services",
+    "federal_agency": "HHS",
+    "subagency": "Indian Health Service (IHS)",
+    "need_categories": [
+      "Health care",
+      "tribal communities",
+      "Indigenous populations"
+    ],
+    "recipient_types": [
+      "American Indian and Alaska Native tribal members"
+    ],
+    "benefit_mechanism_raw": "DIRECT-SERVICE",
+    "benefit_mechanisms": [
+      "DIRECT-SERVICE"
+    ],
+    "welfare_stack_relationship": "Treaty-obligation-based federal health service delivery; tribes can compact services under ISDEAA; distinct from Medicaid/Medicare",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 14",
+    "rationale": "$5.86B FY2026 IHS appropriation; treaty-based health obligation for ~2.6 million eligible AI/AN people; tribal self-governance compacts create a distinct database layer from standard federal health programs.",
+    "official_source_url": "https://www.ihs.gov",
+    "verification_status": "Verified \u2014 IHS primary source"
+  },
+  {
+    "program_id": 50,
+    "program_name": "Bureau of Indian Affairs (BIA) \u2014 General Assistance and Social Services",
+    "federal_agency": "U.S. Department of the Interior (DOI)",
+    "subagency": "Bureau of Indian Affairs (BIA)",
+    "need_categories": [
+      "Poverty",
+      "income support",
+      "tribal communities"
+    ],
+    "recipient_types": [
+      "Eligible American Indians and Alaska Natives on or near reservations"
+    ],
+    "benefit_mechanism_raw": "CASH, DIRECT-SERVICE",
+    "benefit_mechanisms": [
+      "CASH",
+      "DIRECT-SERVICE"
+    ],
+    "welfare_stack_relationship": "General assistance cash; child welfare; adult care; tribal income support when state TANF inaccessible",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 14",
+    "rationale": "BIA General Assistance provides cash to eligible tribal members who are not receiving TANF; separate tribal welfare stack node often overlooked in mainstream federal program databases.",
+    "official_source_url": "https://www.bia.gov/bia",
+    "verification_status": "Verified \u2014 BIA primary source"
+  },
+  {
+    "program_id": 51,
+    "program_name": "AmeriCorps (State and National / VISTA / NCCC / Seniors)",
+    "federal_agency": "AmeriCorps (independent agency)",
+    "subagency": "N/A",
+    "need_categories": [
+      "National service",
+      "poverty",
+      "community development",
+      "workforce"
+    ],
+    "recipient_types": [
+      "Service members",
+      "nonprofits",
+      "state commissions",
+      "communities"
+    ],
+    "benefit_mechanism_raw": "DIRECT-SERVICE, GRANT-COMPETITIVE",
+    "benefit_mechanisms": [
+      "DIRECT-SERVICE",
+      "GRANT-COMPETITIVE"
+    ],
+    "welfare_stack_relationship": "Living stipends + education awards to members; grants to organizations; VISTA directly targets poverty reduction",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 15",
+    "rationale": "~200000 annual service members; education awards (~$7395) usable for student loans; nonprofits receiving AmeriCorps grants are welfare-delivery intermediaries worth cataloging.",
+    "official_source_url": "https://americorps.gov",
+    "verification_status": "Verified \u2014 AmeriCorps primary source"
+  },
+  {
+    "program_id": 52,
+    "program_name": "Child and Dependent Care Tax Credit (CDCTC)",
+    "federal_agency": "U.S. Department of the Treasury / IRS",
+    "subagency": "N/A",
+    "need_categories": [
+      "Child care",
+      "working families",
+      "dependent care"
+    ],
+    "recipient_types": [
+      "Working households with qualifying dependent care expenses"
+    ],
+    "benefit_mechanism_raw": "TAX-CREDIT",
+    "benefit_mechanisms": [
+      "TAX-CREDIT"
+    ],
+    "welfare_stack_relationship": "Non-refundable federal credit; many states have refundable versions; tax system complement to CCDF child care subsidies",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 16",
+    "rationale": "Federal CDCTC is non-refundable; many states have refundable versions; the federal/state gap in refundability is a data story central to understanding household-level value differential.",
+    "official_source_url": "https://www.irs.gov/credits-deductions/individuals/child-and-dependent-care-credit-information",
+    "verification_status": "Verified \u2014 IRS primary source"
+  },
+  {
+    "program_id": 53,
+    "program_name": "USDA Conservation Programs (CRP, EQIP, CSP, ACEP)",
+    "federal_agency": "USDA",
+    "subagency": "Natural Resources Conservation Service (NRCS) / Farm Service Agency (FSA)",
+    "need_categories": [
+      "Conservation",
+      "agricultural land management",
+      "environmental services"
+    ],
+    "recipient_types": [
+      "Agricultural producers",
+      "landowners"
+    ],
+    "benefit_mechanism_raw": "CASH, DIRECT-SERVICE",
+    "benefit_mechanisms": [
+      "CASH",
+      "DIRECT-SERVICE"
+    ],
+    "welfare_stack_relationship": "CRP rental payments for land retirement; cost-share for conservation practices; direct federal transfers to landowners",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": false,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 16",
+    "rationale": "CRP rental payments (~$1.8B/year) and EQIP cost-shares represent direct federal transfers to landowners; county-level data is publicly available and relevant to agricultural welfare stack.",
+    "official_source_url": "https://www.nrcs.usda.gov/programs-initiatives",
+    "verification_status": "Verified \u2014 USDA NRCS primary source"
+  },
+  {
+    "program_id": 54,
+    "program_name": "VA Home Loan Guaranty Program",
+    "federal_agency": "VA",
+    "subagency": "Veterans Benefits Administration (VBA) / Loan Guaranty Service",
+    "need_categories": [
+      "Housing",
+      "homeownership",
+      "veterans"
+    ],
+    "recipient_types": [
+      "Eligible veterans, service members, surviving spouses"
+    ],
+    "benefit_mechanism_raw": "GUARANTEE",
+    "benefit_mechanisms": [
+      "GUARANTEE"
+    ],
+    "welfare_stack_relationship": "VA guarantees portion of private mortgage; no down payment required; no PMI; major wealth-building benefit",
+    "state_administered": false,
+    "state_supplement_or_waiver_possible": false,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": false,
+    "priority_batch": "Batch 16",
+    "rationale": "~400000+ loans/year; zero-down financing with no private mortgage insurance is a substantial wealth-building advantage; often underrepresented in welfare databases focused on means-tested programs.",
+    "official_source_url": "https://www.va.gov/housing-assistance/home-loans/",
+    "verification_status": "Verified \u2014 VA.gov primary source"
+  },
+  {
+    "program_id": 55,
+    "program_name": "Ryan White HIV/AIDS Program",
+    "federal_agency": "HHS",
+    "subagency": "Health Resources and Services Administration (HRSA)",
+    "need_categories": [
+      "HIV/AIDS",
+      "health coverage",
+      "low-income",
+      "underserved"
+    ],
+    "recipient_types": [
+      "Low-income people with HIV who are uninsured/underinsured"
+    ],
+    "benefit_mechanism_raw": "GRANT-FORMULA, GRANT-COMPETITIVE",
+    "benefit_mechanisms": [
+      "GRANT-FORMULA",
+      "GRANT-COMPETITIVE"
+    ],
+    "welfare_stack_relationship": "Formula and competitive grants to states/localities; ADAP medication programs; last-payer health care financing",
+    "state_administered": true,
+    "state_supplement_or_waiver_possible": true,
+    "direct_household_value": true,
+    "links_to_state_database_candidate": true,
+    "priority_batch": "Batch 16",
+    "rationale": "~570000 clients/year; ADAP provides medications to ~200000+ people living with HIV; state-by-state ADAP formularies and eligibility differ substantially making this a state database priority.",
+    "official_source_url": "https://ryanwhite.hrsa.gov",
+    "verification_status": "Verified \u2014 HRSA primary source"
+  }
+]
