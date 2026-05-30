@@ -1,11 +1,17 @@
-# Federal-Level Welfare Stack BETA — Prototype B Preview
+# Federal-Level Welfare Stack BETA
 
-A polished, searchable static dashboard for the **Taxpayer-Paid Welfare Stack** project.
+Prototype B for the **Taxpayer-Paid Welfare Stack** project.
+
+A polished, searchable static dashboard mapping federal public-support program families
+that transfer taxpayer-funded value through household benefits, subsidies, credits,
+loans, insurance, guarantees, direct services, grants, and state/local pass-throughs.
 
 - **Module:** Federal-Level Welfare Stack BETA
 - **Scope:** 55 federal program families that transfer taxpayer-funded value (cash, in-kind benefits, subsidies, credits, loans, insurance, guarantees, direct services, grants, or state/local pass-throughs).
 - **Stack:** Vanilla HTML + CSS + JS, static JSON/CSV assets. No build step. Serve any way.
 - **Source:** `/home/user/workspace/timenowdata-federal-program-index-prototype-b.csv` and `.pplx.md`.
+
+Live demo: https://federal.timenowdata.app
 
 ## Files
 
